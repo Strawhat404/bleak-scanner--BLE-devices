@@ -7,7 +7,7 @@ async def scan_for_beacons():
     print (f"Found {len(devices)} devices:\n")
     
     for device in devices:
-        print(f"Name: {device.name}, Address: {device.address}, RSSI:{device.rrsi}")
+        print(f"Name: {device.name}, Address: {device.address}, RSSI:{device.rssi}")
         
         if "Beacon X Pro" in (device.name or ""):
             print(">> Detected Beacon X Pro W-6 device!")
